@@ -45,18 +45,15 @@ font-family: "Roboto-Regular", sans-serif;
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .menu {
   margin: 0;
   padding: 0;
@@ -65,7 +62,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .menu__item a {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 13px;
@@ -76,23 +72,18 @@ body {
   text-decoration: none;
   margin-right: 43px;
 }
-
 .menu__item:last-child a {
   margin-right: 0;
 }
-
 .activ a {
   color: #010101;
 }
-
 .logo {
   margin: 0 16px;
 }
-
 .header__content {
   text-align: center;
 }
-
 .header__title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 44px;
@@ -103,7 +94,6 @@ body {
   padding-top: 207px;
   margin: 0px auto 4px;
 }
-
 .header__text {
   font-family: "Merriweather-LightItalic", serif;
   font-size: 16px;
@@ -114,7 +104,6 @@ body {
   color: #898888;
   margin: 0 auto 43px;
 }
-
 .header__button {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13px;
@@ -131,7 +120,6 @@ body {
   align-items: center;
   margin: 0 auto 206px;
 }
-
 .about {
   background-color: #1d1d1d;
   height: 1129px;
@@ -142,7 +130,6 @@ body {
     #1d1d1d;
   /*background-size: contain, contain;*/
 }
-
 .about__inner {
   display: grid;
   grid-template-rows: max-content max-content;
@@ -150,7 +137,6 @@ body {
   grid-gap: 178px;
   place-content: center center;
 }
-
 .about__item {
   width: 417px;
   height: 276px;
@@ -161,7 +147,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .about__year {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 48px;
@@ -170,7 +155,6 @@ body {
   color: #fefefe;
   margin-bottom: 27px;
 }
-
 .about__text {
   font-family: "Montserrat-Light", sans-serif;
   font-size: 15px;
@@ -179,15 +163,12 @@ body {
   letter-spacing: 0.02em;
   color: #b7b7b7;
 }
-
 .team {
   height: 745px;
 }
-
 .block__head {
   text-align: center;
 }
-
 .block__title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 34px;
@@ -198,7 +179,6 @@ body {
   padding-top: 138px;
   margin-bottom: 13px;
 }
-
 .block__text {
   font-family: "Merriweather-LightItalic", sans-serif;
   font-size: 16px;
@@ -208,22 +188,17 @@ body {
   color: #898888;
   margin: 0;
 }
-
 .team__inner {
   display: flex;
   justify-content: space-around;
   padding-top: 127px;
-
 }
-
 .team__item {
   text-align: center;
 }
-
 .team__item-img {
   margin-bottom: 29px;
 }
-
 .team__item-title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 24px;
@@ -233,7 +208,6 @@ body {
   margin: 0;
   margin-bottom: 7px;
 }
-
 .team__item-text {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 13px;
@@ -243,42 +217,34 @@ body {
   margin: 0;
   margin-bottom: 21px;
 }
-
 .team__icon-box a {
   font-size: 20px;
   color: #e4e4e4;
   transition: 0.2s;
 }
-
 .team__icon-box a:hover {
   color: #949494;
 }
-
 .provide {
   background-color: #181818;
   padding-bottom: 155px;
 }
-
 .inverse .block__title {
   padding-top: 176px;
   color: #ffffff;
 }
-
 .inverse .block__text {
   color: #777777;
 }
-
 .provide__inner {
   display: flex;
   justify-content: space-between;
   padding-top: 138px;
 }
-
 .provide__item {
   text-align: center;
   max-width: 335px;
 }
-
 .provide__item i {
   color: #ffffff;
   font-size: 63px;
@@ -291,7 +257,6 @@ body {
   align-items: center;
   margin: 0 auto 43px;
 }
-
 .provide__item-title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 26px;
@@ -301,7 +266,6 @@ body {
   margin: 0;
   margin-bottom: 31px;
 }
-
 .provide__item-text {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 18px;
@@ -310,19 +274,9 @@ body {
   color: #383838;
   margin: 0;
 }
-
-.contact {}
-
 .contact .block__head .block__title {
   padding-top: 95px;
 }
-
-.block__title {}
-
-.block__text {}
-
-.contact__inner {}
-
 .contact__icons-box {
   display: flex;
   justify-content: space-evenly;
@@ -339,8 +293,6 @@ body {
   color: #323232;
   font-style: 21px;
 }
-
-.icon-phone {}
 .contact__text {
   margin-bottom: 12px;
 }
@@ -357,11 +309,6 @@ body {
   color: #4b4b4b;
   text-decoration: underline;
 }
-
-.icon-location {}
-
-.icon-mail-alt {}
-
 .contact__form {
   padding-top: 153px;
   display: flex;
