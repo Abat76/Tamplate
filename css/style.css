@@ -47,8 +47,8 @@ font-family: "Roboto-Regular", sans-serif;
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -85,7 +85,7 @@ body {
   display: none;
 }
 
-.activ a {
+.active a {
   color: #010101;
 }
 
@@ -136,15 +136,15 @@ body {
   margin: 0 auto 206px;
 }
 
+/*О нас*/
 .about {
-  background-color: #1d1d1d;
   height: 1129px;
   padding-top: 128px;
   padding-bottom: 271px;
-  background: url('../img/buildings_white.png') center 101% repeat-x,
-    url('../img/buildings_dark.png') center 101% repeat-x,
+  background: url(../img/buildings_white.png) center 100% repeat-x,
+    url(../img/buildings_dark.png) center 100% repeat-x,
     #1d1d1d;
-  /*background-size: contain, contain;*/
+  /* background-size: contain, contain; */
 }
 
 .about__inner {
@@ -179,11 +179,12 @@ body {
   font-family: "Montserrat-Light", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 22px;
   letter-spacing: 0.02em;
+  line-height: 22px;
   color: #b7b7b7;
 }
 
+/*Команда*/
 .team {
   height: 745px;
 }
@@ -257,6 +258,7 @@ body {
   color: #949494;
 }
 
+/* Услуги */
 .provide {
   background-color: #181818;
   padding-bottom: 155px;
@@ -283,11 +285,11 @@ body {
 }
 
 .provide__item i {
-  color: #ffffff;
+  color: #fff;
   font-size: 63px;
   width: 172px;
   height: 172px;
-  border: 5px solid #ffffff;
+  border: 5px solid #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -314,13 +316,14 @@ body {
   margin: 0;
 }
 
+/* Форма */
 .contact .block__head .block__title {
   padding-top: 95px;
 }
 
-.contact__icons-box {
+.contact__icon-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 570px;
   margin: 0 auto;
   padding-top: 64px;
@@ -333,7 +336,7 @@ body {
 
 .contact__item i {
   color: #323232;
-  font-style: 21px;
+  font-size: 21px;
 }
 
 .contact__text {
@@ -347,7 +350,7 @@ body {
   letter-spacing: 0.02em;
   color: #898888;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s
 }
 
 .contact__text a:hover {
@@ -421,11 +424,6 @@ input[type='number'] {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #fefefe;
-  transition: .3s;
-}
-
-.contact__form .contact__button:hover {
-  background-color: #2e2d2d;
 }
 
 .footer {
@@ -442,16 +440,10 @@ input[type='number'] {
   margin-bottom: 29px;
 }
 
+/*media for iPad*/
 @media screen and (max-width: 769px) {
   .container {
     width: 768px;
-  }
-
-  .about__inner {
-    display: grid;
-    grid-template-columns: max-content;
-    grid-gap: 30px;
-    place-content: center center;
   }
 
   .about {
@@ -459,12 +451,17 @@ input[type='number'] {
     padding-bottom: 200px;
   }
 
+  .about__inner {
+    grid-gap: 30px;
+    grid-template-columns: max-content;
+  }
+
   .provide {
     padding-bottom: 100px;
   }
 
-  .provide .block__title,
-  .team .block__title {
+  .team .block__title,
+  .provide .block__title {
     padding-top: 100px;
   }
 
@@ -487,6 +484,7 @@ input[type='number'] {
   }
 }
 
+/*media for iPhone*/
 @media screen and (max-width: 376px) {
   .container {
     width: 375px;
@@ -502,38 +500,86 @@ input[type='number'] {
 
   .menu__mobile {
     display: flex;
+    flex-direction: column;
+  }
+
+  .menu__inner {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .menu {
     display: none;
+    text-align: center;
+  }
+
+  .menu li {
+    padding: 10px 0;
+  }
+
+  .menu a {
+    margin: 0;
   }
 
   .menu__burger {
+    display: block;
+    overflow: hidden;
     cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 3px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
     background-color: #000;
+    border-radius: 5px;
+    position: relative;
   }
 
-  .menu__burger:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background-color: #000;
+  .menu__burger span {
+    display: block;
     position: absolute;
+    background-color: #fff;
+    height: 4px;
+    width: 30px;
+    top: 18px;
+    left: 5px;
+    right: 5px;
+    transition: background 0s 0.3s;
+  }
+
+  .menu__burger span:after,
+  .menu__burger span:before {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    content: '';
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+  }
+
+  .menu__burger span:after {
+    top: -10px;
+  }
+
+  .menu__burger span:before {
     bottom: -10px;
   }
 
-  .menu__burger:before {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    position: absolute;
-    top: -10px;
+  .menu__burger.close span {
+    background: none;
+  }
+
+  .menu__burger.close span:after {
+    top: 0px;
+    transform: rotate(45deg);
+  }
+
+  .menu__burger.close span:before {
+    bottom: 0px;
+    transform: rotate(-45deg);
   }
 
   .header__title {
@@ -550,8 +596,8 @@ input[type='number'] {
   }
 
   .team {
-    padding-bottom: 80px;
     height: auto;
+    padding-bottom: 80px;
   }
 
   .team__inner {
